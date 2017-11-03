@@ -1,0 +1,10 @@
+#!/bin/sh
+cd `dirname $0` 
+make clean
+make package install
+
+scp ./redpackage.lua iphone150:/private/var/mobile/Media/TouchSprite/lua/
+
+# scp ./checkDeviceLock.lua iphone150:/private/var/mobile/Media/TouchSprite/lua/
+rm -f ./debs/*
+exit 0
