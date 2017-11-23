@@ -73,15 +73,7 @@
                 if (!([tmp IsUserInChatRoom:key])){// 而且在白名单之内
                     NSLog(@"key :%@",key );// m_nsUsrName
                     
-                    
-                    //               				                			Nov  3 17:39:16 iPhone WeChat[5579] <Warning>: KNHooklog :-(c)AddGroupMember:withMemberList:withDesp:(have 3 value)
-                    // return:0
-                    // value1:__NSCFString-->5565276344@chatroom
-                    // value2:__NSArrayM-->(
-                    //     "{m_nsMemberName=z929118967, m_uiMemberStatus=0, m_nsNickName=(null)}"
-                    // )
-                    // value3:(null)-->(null)
-                    // object:<CGroupMgr: 0x195f1850>
+                 
                     
                     
                     GroupMember *groupMember = [[%c(GroupMember) alloc]init];
